@@ -26,7 +26,7 @@ body{
     margin: 10px 10px;
 }
 .screen div{
-    min-height: 40px;
+    min-height: 35px;
     margin-top: 12px;
 }
 .entry{
@@ -43,4 +43,16 @@ body{
     font-size: 48px;
     margin: 1px 1px;
     padding: 10px 20px;
+}
+
+.scentry{
+    text-align: end;
+    margin-right: 3px;
+    font-size: 40px;
+}
+.result{
+    text-align: end;
+    margin-right: 3px;
+    font-size: 25px;
+    opacity: 0.5;
 }
