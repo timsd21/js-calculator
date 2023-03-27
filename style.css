@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.main{
+    width: 400px;
+    border: 2px black solid;
+    border-radius: 15px;
+    background-color: grey;
+
+}
+.screen{
+    border: 2px black solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: white;
+    margin: 10px 10px;
+}
+.screen div{
+    min-height: 40px;
+    margin-top: 12px;
+}
+.entry{
+    border: 2px solid black;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+    margin-bottom: 1vh;
+    margin: 10px 10px;
+
+}
+.entry button{
+    font-size: 48px;
+    margin: 1px 1px;
+    padding: 10px 20px;
+}
