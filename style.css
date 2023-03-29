@@ -47,6 +47,8 @@ body{
     text-align: end;
     margin-right: 3px;
     font-size: 40px;
+word-wrap: break-word;
+word-break: break-all;
 }
 .result{
     text-align: end;

@@ -66,6 +66,7 @@ multiplication.addEventListener("click", ()=>{
     }
 })
 point.addEventListener("click", ()=>{
+    scentry.textContent += ".";
 })
 minus.addEventListener("click", ()=>{
     if(scentry.textContent.at(-1)!== "-" && scentry.textContent.at(-1)!== "+" && scentry.textContent.at(-1)!== "*" && scentry.textContent.at(-1)!== "÷"){
