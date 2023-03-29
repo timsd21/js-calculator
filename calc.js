@@ -18,7 +18,19 @@ const zero = document.querySelector("#zero");
 const minus = document.querySelector("#minus");
 const scentry = document.querySelector(".scentry");
 const scresult = document.querySelector(".result");
+const clear = document.querySelector("#cbutton");
+const back = document.querySelector("#back")
+const calc = document.querySelector(".main");
 
+clear.addEventListener("click", ()=>{
+    store = 0;
+    scentry.textContent= "";
+    scresult.textContent= "";
+})
+back.addEventListener("click", ()=>{
+scentry.textContent = "";
+
+})
 plus.addEventListener("click", ()=>{
     if(scentry.textContent.at(-1)!== "-" && scentry.textContent.at(-1)!== "+" && scentry.textContent.at(-1)!== "*" && scentry.textContent.at(-1)!== "÷"){
        if(store == 0){
@@ -26,7 +38,7 @@ plus.addEventListener("click", ()=>{
        }
         else{store = store + Number(scentry.textContent);}
         
-        scresult.textContent= scresult.textContent+ scentry.textContent +"÷";
+        scresult.textContent= scresult.textContent+ scentry.textContent +"+";
         scentry.textContent = "";
 
         
@@ -73,7 +85,6 @@ result.addEventListener("click", ()=>{
         scresult.textContent = "";
     }
     else if(scresult.textContent.at(-1) === "÷"){
-        alert(store);
         store /= Number(scentry.textContent);
         scresult.textContent = "";
     }
